@@ -1,0 +1,39 @@
+@import 'open-props/style';
+
+@font-face {
+	font-family: 'Monaspace Argon';
+	src: url('/MonaspaceArgonVarVF[wght,wdth,slnt].woff2') format('woff2');
+	/* Add more src declarations for different font formats if needed */
+	/* font-weight: normal;
+  font-style: normal; */
+}
+
+:root {
+	--bg: var(--gradient-23);
+	--text-main: var(--blue-1);
+	--highlight: var(--red-5);
+	--alt-bg: var(--gradient-28);
+
+	@media (prefers-color-scheme: light) {
+		--bg: var(--gradient-22);
+		--text-main: var(--blue-11);
+		--alt-bg: var(--gradient-8);
+	}
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Monaspace Argon', sans-serif;
+	background: var(--bg) no-repeat;
+	min-height: 100vh;
+	display: grid;
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Monaspace Argon', sans-serif;
+	}
+}
